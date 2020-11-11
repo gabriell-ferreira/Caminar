@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#background {
+  background-image: url(images/bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-top: 30px
+}
+
+header h1 {
+  color: #fff;
+  font-size: 55px;
+}
+
+header h4 {
+  font-weight: lighter;
+  color: #beb4a4;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+#area-1, #area-1 .area-title, #area-2 .area-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#area-1 img {
+  width: 100%; 
+}
+
+#area-1 .area-title.white {
+  background-color: #fff
+}
+
+#area-1 .area-title {
+  height: 25vh;
+  width: 100%;
+  color: #1e1f23
+}
+
+#area-1 .area-title .title{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#area-1 .area-title .bar {
+  border-bottom: 1px solid #d4d4d4;
+  width: 60px;
+  margin: 20px 0 20px 0;
+}
+
+#area-1 .area-title .sub-title {
+  color: #d4d4d4;
+  font-size: 13px;
+}
+
+#area-1 .about {
+  background-color: #f5f5f5;
+  padding: 50px;
+  color:#a3a4a2;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#area-1 .about p:first-child {
+  margin-bottom: 30px;
+}
+
+#area-2 {
+  background-color: #1e1f23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#area-2 .container {
+  width: 80%;
+  background-color: #fff;
+  margin-top: 7%;
+  margin-bottom: 7%
+}
+
+#area-2 .area-title {
+  background-color: #000;
+}
+
+#area-2 .area-title .title{
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 30px
+}
+
+#area-2 .area-title .bar {
+  border-bottom: 1px solid #3c3e3f;
+  width: 60px;
+  margin: 20px 0 20px 0;
+}
+
+#area-2 .area-title .sub-title {
+  color: #3c3e3f;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 15px;
+}
+
+#area-2 .gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#area-2 .gallery img {
+  width: 100%;
+}
+
+#area-3 .line-1, 
+#area-3 .line-2, 
+#area-3 .line-3{
+  display: flex;
+}
+
+#area-3 img {
+  width: 50%
+}
+
+#area-3 .text {
+  display: flex;
+  justify-content: center;
+  
+  flex-direction: column;
+
+  padding: 70px;
+  text-align: start;
+}
+
+#area-3 .text .title {
+  margin-bottom: 20px;
+}
+
+#area-3 .line-2 .text {
+  text-align: right;
+}
+
+#area-3 .text.white {
+  background-color: #f5f5f3
+}
+#area-3 .text.white .title {
+  font-weight: bold;
+  font-size: 20px;
+}
+#area-3 .text.white .desc {
+  color:#a3a4a2;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#area-3 .text.black {
+  background-color: #1e1f23;
+}
+#area-3 .text.black .title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff
+}
+#area-3 .text.black .desc {
+  color:#4b4b4f;
+  font-weight: b;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#icons img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+#icons img:last-of-type {
+  margin-right: 0;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#credits, .icons-credits, .author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a3a4a2;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#credits a, .icons-credits a {
+  color: #a3a4a2;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.author {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px){
+  main {
+    width: 95%;
+  }
+
+  #area-2 .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #area-3 .line-1,
+  #area-3 .line-2, 
+  #area-3 .line-3{
+    flex-wrap: wrap
+  }
+
+  #area-3 .line-2 {
+    flex-direction: column-reverse;
+  }
+  
+  #area-3 img {
+    width: 100%
+  }
+
+  #area-3 .line-2 .text {
+    text-align: center;
+  }
+
+  #area-3 .text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10%
+  }
+}
